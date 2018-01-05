@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    font-family: "楷体";
+}
+
+header{
+    text-align: center;
+}
+
+header h1{
+    color: darkolivegreen;
+}
+
+#ctrl-btn{
+    display: flex;
+    justify-content: space-around;
+}
+#ctrl-btn round-label{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#ctrl-btn button{
+    background-color: darkolivegreen;
+    color: white;
+    font-size: 18px;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* 棋盘背景 */
+#chess-board{
+    width: 1024px;
+    height: 1024px;
+    border: 1px solid black;
+    background: url(chess-bg.jpg);
+    background-size: 100% 100%;
+    margin: 16px auto;
+}
+
+#gt{
+    border: 5px solid darkolivegreen;
+    border-collapse: collapse;
+    margin: 25.6px;
+}
+#gt td{
+    /* border: 1px solid red; */
+    width: 51.2px;
+    height: 51.2px;
+    transform: scale(0.5);
+}
+
+#gt td div{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+[state=black]{
+    border: 1px solid #000000;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 20px -20px 10px 10px black inset;
+}
+
+[state=white]{
+    border: 1px solid black;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 20px -20px 10px 10px #eee inset;
+}
+
+.current{
+    border: 1px solid red;
+}
